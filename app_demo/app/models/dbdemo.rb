@@ -1,0 +1,2 @@
+class Dbdemo < ApplicationRecord
+end

@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @dbdemo %>
+
+
+
+<div>
+  <%= link_to "Edit ", edit_dbdemo_path(@dbdemo) %> |
+  <%= link_to "Back ", dbdemos_path %>
+
+  <%= button_to "Destroy ", @dbdemo, method: :delete %>
+</div>

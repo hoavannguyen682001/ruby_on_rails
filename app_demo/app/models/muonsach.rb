@@ -1,0 +1,2 @@
+class Muonsach < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class Qlmuonsach < ApplicationRecord
+end

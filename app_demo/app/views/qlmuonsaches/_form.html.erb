@@ -1,0 +1,57 @@
+<%= form_with(model: qlmuonsach) do |form| %>
+  <% if qlmuonsach.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(qlmuonsach.errors.count, "error") %> prohibited this qlmuonsach from being saved:</h2>
+
+      <ul>
+        <% qlmuonsach.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :STT, style: "display: block" %>
+    <%= form.number_field :stt %>
+  </div>
+
+  <div>
+    <%= form.label :Họ_và_tên, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :Lớp, style: "display: block" %>
+    <%= form.text_field :lop %>
+  </div>
+
+  <div>
+    <%= form.label :Mã_Sách, style: "display: block" %>
+    <%= form.text_field :masach %>
+  </div>
+
+  <div>
+    <%= form.label :Tên_Sách, style: "display: block" %>
+    <%= form.text_field :tensach %>
+  </div>
+
+  <div>
+    <%= form.label :Tên_Tác_Giả, style: "display: block" %>
+    <%= form.text_field :tenTG %>
+  </div>
+
+  <div>
+    <%= form.label :Ngày_Mượn, style: "display: block" %>
+    <%= form.datetime_field :ngaymuon %>
+  </div>
+
+  <div>
+    <%= form.label :Ngày_Trả, style: "display: block" %>
+    <%= form.datetime_field :ngaytra %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

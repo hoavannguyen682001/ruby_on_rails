@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @qlmuonsach %>
+
+<div>
+  <%= link_to "Chỉnh sửa thông tin", edit_qlmuonsach_path(@qlmuonsach) %> |
+  <%= link_to "Trở về", qlmuonsaches_path %>
+
+  <%= button_to "Xoá học sinh này", @qlmuonsach, method: :delete %>
+</div>
